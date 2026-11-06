@@ -20,12 +20,16 @@ Instead of classifying an image, it performs regression. It takes the 160x160 di
 *Note: I specifically designed the data pipeline and CNN architecture to be lightweight so the entire end-to-end training process can execute efficiently on a standard local CPU (like an i3 processor with 8GB RAM) without requiring heavy cloud GPUs.*
 
 ## Results
-The network successfully learns the underlying wave physics rather than just memorizing images. Below is the parity plot showing the AI's predictions vs. the true mathematical coefficients on unseen test data.
 
-Parity Plot image here: `![Parity Plot](images/ParityPlot.png)`
+The network successfully learns the underlying wave physics rather than just memorizing images. Below are the predictions vs. the true mathematical coefficients on unseen test data.
 
-Inference Demo image here: `![Inference Demo](images/Inference_demo.jpeg)`)
+**Parity Plot:**
 
+![Parity Plot](images/ParityPlot.png)
+
+**Inference Demo:**
+
+![Inference Demo](images/Inference_demo.jpeg)
 ---
 
 ## How to Run It Locally
