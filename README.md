@@ -22,9 +22,9 @@ Instead of classifying an image, it performs regression. It takes the 160x160 di
 ## Results
 The network successfully learns the underlying wave physics rather than just memorizing images. Below is the parity plot showing the AI's predictions vs. the true mathematical coefficients on unseen test data.
 
-*(Add your Parity Plot image here: `![Parity Plot](image_path.png)`)*
+*(Add your Parity Plot image here: `![Parity Plot](images/ParityPlot.png)`)*
 
-*(Add your Inference Demo image here: `![Inference Demo](image_path.png)`)*
+*(Add your Inference Demo image here: `![Inference Demo](images/Inference_demo.jpeg)`)*
 
 ---
 
