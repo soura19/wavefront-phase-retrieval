@@ -38,17 +38,22 @@ The network successfully learns the underlying wave physics rather than just mem
 You can recreate the exact lightweight environment used for this project:
 ```bash
 pip install -r requirements.txt
+```
 
 ### 2. Generate the Dataset
-Since the 650MB .npz archive is too large to host on GitHub, you can generate your own synthetic dataset of 2,000 optical simulations using the physics engine:
-
-Simply type python generate_dataset.py in your anaconda prompt or run the file in ur IDE.
+Since the 650MB `.npz` archive is too large to host on GitHub, you can generate your own synthetic dataset of 2,000 optical simulations. Simply type the following in your Anaconda prompt (or run it in your IDE):
+```bash
+python generate_dataset.py
+```
 
 ### 3. Train the Network
-Feed the dataset into the PyTorch CNN. It will output the training/testing loss per epoch and save the final network weights to coma_cnn.pth. It will also generate a parity plot to validate the physics.
-
-Run the file train_cnn.py
+Feed the dataset into the PyTorch CNN. It will output the training/testing loss per epoch and save the final network weights to `coma_cnn.pth`. Run the file:
+```bash
+python train_cnn.py
+```
 
 ### 4. Test Live Inference
-To see the AI in action, run the diagnostic script (demo_inference.py). This generates a brand new, random optical aberration, simulates the resulting diffraction pattern, and asks the trained AI to deduce the error from the image alone.
-
+To see the AI in action, run the diagnostic script (`demo_inference.py`). This generates a brand new, random optical aberration, simulates the resulting diffraction pattern, and asks the trained AI to deduce the error from the image alone.
+```bash
+python demo_inference.py
+```
