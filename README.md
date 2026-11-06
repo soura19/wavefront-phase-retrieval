@@ -1,7 +1,7 @@
 # AI-Driven Wavefront Phase Retrieval (Adaptive Optics)
 
 ## The Problem
-In real-world optical systems—whether it's a ground-based telescope looking through the atmosphere or a microscope looking through biological tissue—light waves get distorted. The major engineering bottleneck is that standard camera sensors can only measure light **intensity** (the blur), completely losing the **phase** information (how the wave was actually bent). 
+In real-world optical systems, whether it's a ground-based telescope looking through the atmosphere or a microscope looking through biological tissue, light waves get distorted. The major engineering bottleneck is that standard camera sensors can only measure light **intensity** (the blur), completely losing the **phase** information (i.e. how the wave was actually bent). 
 
 I built this project to solve this inverse problem. Instead of using expensive, physical hardware sensors to figure out what went wrong, this pipeline uses a Convolutional Neural Network (CNN) to look at the blurred focal-plane intensity and mathematically reverse-engineer the exact physical phase distortion that caused it. 
 
